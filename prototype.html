@@ -39,11 +39,20 @@
 
 <body unresolved class="fullbleed">
   <paper-drawer-panel id="drawer_panel" disable-swipe force-narrow>
-    <paper-header-panel drawer mode="seamed">
-      <div id="drawer_content"></div>
+    <paper-header-panel drawer="" mode="seamed" at-top="">
+      <div id="drawer_content" style="border: none;"></div>
     </paper-header-panel>
-    <paper-header-panel main mode="seamed">
-      <iron-pages id="app_content" attr-for-selected="id"></iron-pages>
+    <paper-header-panel main="" mode="seamed" at-top="">
+      <iron-pages id="app_content" attr-for-selected="id">
+        <section id="inicio">
+          <poly-toolbar id="poly4">
+            <poly-icon-button icon="menu" src="" link="" id="poly4A" style="margin-right: 20px;"></poly-icon-button>
+            <poly-label text="Aplicación" size="paper-font-subhead" link="" id="poly4B" flex=""></poly-label>
+            <poly-icon-button icon="refresh" src="" link="" id="poly4C"></poly-icon-button>
+            <poly-icon-button icon="search" src="" link="" id="poly4D"></poly-icon-button>
+          </poly-toolbar>
+        </section>
+      </iron-pages>
     </paper-header-panel>
   </paper-drawer-panel>
 
